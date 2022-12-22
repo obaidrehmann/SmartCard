@@ -12,6 +12,7 @@ import BannerLayoutSectionFive from "./homeSections/BannerLayoutSectionFive";
 import BlogGridSection from "./homeSections/BlogGridSection";
 import BannerLayoutTwo from "./homeSections/BannerLayoutTwo";
 import Footer from "../../components/footer/Footer";
+import VideoSection from "./homeSections/VideoSection";
 
 export default function Home() {
   const [isLoader, setisLoader] = useState(true);
@@ -51,12 +52,18 @@ export default function Home() {
         <AboutSection />
         <ServicesCarouselSection />
         <FeaturesLayoutSection />
+
         <PortfolioGridSection />
         <div className="checking">
           <BannerLayoutSectionFive />
         </div>
+
+        <VideoSection />
+
         {/* <BlogGridSection /> */}
-        <BannerLayoutTwo />
+        <div className="largeMargin">
+          <BannerLayoutTwo />
+        </div>
         <Footer />
       </div>
     </>
